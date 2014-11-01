@@ -71,8 +71,64 @@ namespace scicalc
             this.display.Text = "";
         }
 
-       
+        private void button_plus_Click(object sender, EventArgs e)
+        {
+            ilkSayi = int.Parse(this.display.Text);
+            this.display.Text = "";
+            islem = '+';
+        }
 
+        private void button_minus_Click(object sender, EventArgs e)
+        {
+            ilkSayi = int.Parse(this.display.Text);
+            this.display.Text = "";
+            islem = '-';
+        }
+        private void button_mult_Click(object sender, EventArgs e)
+        {
+            ilkSayi = int.Parse(this.display.Text);
+            this.display.Text = "";
+            islem = '*';
+
+        }
+        private void button_div_Click(object sender, EventArgs e)
+        {
+            ilkSayi = int.Parse(this.display.Text);
+            this.display.Text = "";
+            islem = '/';
+        }
+
+        private int ilkSayi;
+        private char islem;
+
+        private void button_equal_Click(object sender, EventArgs e)
+        {
+            int ikinciSayi = int.Parse(this.display.Text);
+            int sonuc = 0;
+            if (islem == '+')
+            {
+               sonuc = ilkSayi + ikinciSayi;  
+            }
+            else if (islem == '-')
+            {
+                sonuc = ilkSayi - ikinciSayi;
+            }
+            else if (islem == '*')
+	        {
+		       sonuc = ilkSayi * ikinciSayi;
+	        }
+            else if (islem == '/')
+	        {
+                sonuc = ilkSayi / ikinciSayi;
+	        }
+             
+            this.display.Text = sonuc.ToString();
+        }
+
+        
+        
+
+        
         
     }
 }

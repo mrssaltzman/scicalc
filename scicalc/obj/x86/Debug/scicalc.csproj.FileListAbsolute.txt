@@ -1,7 +1,0 @@
-C:\Users\Murat\Desktop\Bilişim Dersleri\scicalc\scicalc\bin\Debug\scicalc.exe
-C:\Users\Murat\Desktop\Bilişim Dersleri\scicalc\scicalc\bin\Debug\scicalc.pdb
-C:\Users\Murat\Desktop\Bilişim Dersleri\scicalc\scicalc\obj\x86\Debug\scicalc.Form1.resources
-C:\Users\Murat\Desktop\Bilişim Dersleri\scicalc\scicalc\obj\x86\Debug\scicalc.Properties.Resources.resources
-C:\Users\Murat\Desktop\Bilişim Dersleri\scicalc\scicalc\obj\x86\Debug\scicalc.csproj.GenerateResource.Cache
-C:\Users\Murat\Desktop\Bilişim Dersleri\scicalc\scicalc\obj\x86\Debug\scicalc.exe
-C:\Users\Murat\Desktop\Bilişim Dersleri\scicalc\scicalc\obj\x86\Debug\scicalc.pdb
