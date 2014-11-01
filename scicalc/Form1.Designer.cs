@@ -47,6 +47,7 @@
             this.display = new System.Windows.Forms.TextBox();
             this.button_delete = new System.Windows.Forms.Button();
             this.button_dot = new System.Windows.Forms.Button();
+            this.button_backspace = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_7
@@ -237,11 +238,22 @@
             this.button_dot.UseVisualStyleBackColor = true;
             this.button_dot.Click += new System.EventHandler(this.button_dot_Click);
             // 
+            // button_backspace
+            // 
+            this.button_backspace.Location = new System.Drawing.Point(146, 110);
+            this.button_backspace.Name = "button_backspace";
+            this.button_backspace.Size = new System.Drawing.Size(56, 54);
+            this.button_backspace.TabIndex = 2;
+            this.button_backspace.Text = "<--";
+            this.button_backspace.UseVisualStyleBackColor = true;
+            this.button_backspace.Click += new System.EventHandler(this.button_backspace_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(504, 457);
+            this.Controls.Add(this.button_backspace);
             this.Controls.Add(this.display);
             this.Controls.Add(this.button_8);
             this.Controls.Add(this.button_div);
@@ -289,6 +301,7 @@
         private System.Windows.Forms.TextBox display;
         private System.Windows.Forms.Button button_delete;
         private System.Windows.Forms.Button button_dot;
+        private System.Windows.Forms.Button button_backspace;
     }
 }
 

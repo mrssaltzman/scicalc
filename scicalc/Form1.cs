@@ -138,6 +138,12 @@ namespace scicalc
 
         }
 
+        private void button_backspace_Click(object sender, EventArgs e)
+        {
+            int length = this.display.Text.Length - 1;
+            this.display.Text = this.display.Text.Substring(0, length);
+        }
+
         
         
 
