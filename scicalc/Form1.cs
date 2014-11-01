@@ -125,6 +125,13 @@ namespace scicalc
             this.display.Text = sonuc.ToString();
         }
 
+        private void button_negate_Click(object sender, EventArgs e)
+        {
+            int sayi = int.Parse(this.display.Text);
+            sayi = sayi * -1;
+            this.display.Text = sayi.ToString();
+        }
+
         
         
 

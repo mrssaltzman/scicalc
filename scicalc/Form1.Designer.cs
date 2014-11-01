@@ -176,6 +176,7 @@
             this.button_negate.TabIndex = 0;
             this.button_negate.Text = "+\r\n-\r\n";
             this.button_negate.UseVisualStyleBackColor = true;
+            this.button_negate.Click += new System.EventHandler(this.button_negate_Click);
             // 
             // button_div
             // 
