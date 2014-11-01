@@ -73,7 +73,7 @@ namespace scicalc
 
         private void button_plus_Click(object sender, EventArgs e)
         {
-            ilkSayi = int.Parse(this.display.Text);
+            ilkSayi = double.Parse(this.display.Text);
             this.display.Text = "";
             islem = '+';
         }
@@ -98,13 +98,13 @@ namespace scicalc
             islem = '/';
         }
 
-        private int ilkSayi;
+        private double ilkSayi;
         private char islem;
 
         private void button_equal_Click(object sender, EventArgs e)
         {
-            int ikinciSayi = int.Parse(this.display.Text);
-            int sonuc = 0;
+            double ikinciSayi = double.Parse(this.display.Text);
+            double sonuc = 0;
             if (islem == '+')
             {
                sonuc = ilkSayi + ikinciSayi;  
@@ -127,9 +127,15 @@ namespace scicalc
 
         private void button_negate_Click(object sender, EventArgs e)
         {
-            int sayi = int.Parse(this.display.Text);
+            double sayi = double.Parse(this.display.Text);
             sayi = sayi * -1;
             this.display.Text = sayi.ToString();
+        }
+
+        private void button_dot_Click(object sender, EventArgs e)
+        {
+            this.display.Text += ",";
+
         }
 
         
