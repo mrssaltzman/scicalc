@@ -45,6 +45,7 @@
             this.button_8 = new System.Windows.Forms.Button();
             this.button_plus = new System.Windows.Forms.Button();
             this.display = new System.Windows.Forms.TextBox();
+            this.button_delete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_7
@@ -55,6 +56,7 @@
             this.button_7.TabIndex = 0;
             this.button_7.Text = "7";
             this.button_7.UseVisualStyleBackColor = true;
+            this.button_7.Click += new System.EventHandler(this.button_7_Click);
             // 
             // button_9
             // 
@@ -64,6 +66,7 @@
             this.button_9.TabIndex = 0;
             this.button_9.Text = "9";
             this.button_9.UseVisualStyleBackColor = true;
+            this.button_9.Click += new System.EventHandler(this.button_9_Click);
             // 
             // button_mult
             // 
@@ -82,6 +85,7 @@
             this.button_6.TabIndex = 0;
             this.button_6.Text = "6";
             this.button_6.UseVisualStyleBackColor = true;
+            this.button_6.Click += new System.EventHandler(this.button_6_Click);
             // 
             // button_5
             // 
@@ -91,6 +95,7 @@
             this.button_5.TabIndex = 0;
             this.button_5.Text = "5";
             this.button_5.UseVisualStyleBackColor = true;
+            this.button_5.Click += new System.EventHandler(this.button_5_Click);
             // 
             // button_4
             // 
@@ -100,6 +105,7 @@
             this.button_4.TabIndex = 0;
             this.button_4.Text = "4";
             this.button_4.UseVisualStyleBackColor = true;
+            this.button_4.Click += new System.EventHandler(this.button_4_Click);
             // 
             // button_1
             // 
@@ -109,6 +115,7 @@
             this.button_1.TabIndex = 0;
             this.button_1.Text = "1";
             this.button_1.UseVisualStyleBackColor = true;
+            this.button_1.Click += new System.EventHandler(this.button_1_Click);
             // 
             // button_2
             // 
@@ -118,6 +125,7 @@
             this.button_2.TabIndex = 0;
             this.button_2.Text = "2";
             this.button_2.UseVisualStyleBackColor = true;
+            this.button_2.Click += new System.EventHandler(this.button_2_Click);
             // 
             // button_3
             // 
@@ -127,6 +135,7 @@
             this.button_3.TabIndex = 0;
             this.button_3.Text = "3";
             this.button_3.UseVisualStyleBackColor = true;
+            this.button_3.Click += new System.EventHandler(this.button_3_Click);
             // 
             // button_minus
             // 
@@ -154,6 +163,7 @@
             this.button_0.TabIndex = 0;
             this.button_0.Text = "0";
             this.button_0.UseVisualStyleBackColor = true;
+            this.button_0.Click += new System.EventHandler(this.button_0_Click);
             // 
             // button_negate
             // 
@@ -181,6 +191,7 @@
             this.button_8.TabIndex = 0;
             this.button_8.Text = "8";
             this.button_8.UseVisualStyleBackColor = true;
+            this.button_8.Click += new System.EventHandler(this.button_8_Click);
             // 
             // button_plus
             // 
@@ -198,6 +209,16 @@
             this.display.Size = new System.Drawing.Size(242, 20);
             this.display.TabIndex = 1;
             // 
+            // button_delete
+            // 
+            this.button_delete.Location = new System.Drawing.Point(208, 110);
+            this.button_delete.Name = "button_delete";
+            this.button_delete.Size = new System.Drawing.Size(56, 54);
+            this.button_delete.TabIndex = 0;
+            this.button_delete.Text = "C";
+            this.button_delete.UseVisualStyleBackColor = true;
+            this.button_delete.Click += new System.EventHandler(this.button_delete_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,6 +227,7 @@
             this.Controls.Add(this.display);
             this.Controls.Add(this.button_8);
             this.Controls.Add(this.button_div);
+            this.Controls.Add(this.button_delete);
             this.Controls.Add(this.button_negate);
             this.Controls.Add(this.button_0);
             this.Controls.Add(this.button_equal);
@@ -246,6 +268,7 @@
         private System.Windows.Forms.Button button_8;
         private System.Windows.Forms.Button button_plus;
         private System.Windows.Forms.TextBox display;
+        private System.Windows.Forms.Button button_delete;
     }
 }
 
