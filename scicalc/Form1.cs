@@ -179,9 +179,10 @@ namespace scicalc
 
         private void button_negate_Click(object sender, EventArgs e)
         {
-            double sayi = double.Parse(this.display.Text);
+            double sayi = double.Parse(satir2);
             sayi = sayi * -1;
-            this.display.Text = sayi.ToString();
+            satir2 = sayi.ToString();
+            updateDisplay();
         }
 
         private void button_dot_Click(object sender, EventArgs e)
@@ -195,8 +196,16 @@ namespace scicalc
 
         private void button_backspace_Click(object sender, EventArgs e)
         {
-            int length = this.display.Text.Length - 1;
-            this.display.Text = this.display.Text.Substring(0, length);
+            int length = satir2.Length - 1;
+            if (length > 0)
+            {
+                satir2 = satir2.Substring(0, length);
+            }
+            else
+            {
+                satir2 = "0";
+            }
+            updateDisplay();
         }
 
         private void button_clear_Click(object sender, EventArgs e)
@@ -208,7 +217,5 @@ namespace scicalc
             satir2 = "0";
             updateDisplay();
         }
-
-           
     }
 }
