@@ -16,7 +16,7 @@ namespace scicalc
         private char islem;
         private bool islemBitti = false;
         private String satir1 = "";
-        private String satir2 = "";
+        private String satir2 = "0";
 
         private void updateDisplay()
         {
@@ -26,6 +26,7 @@ namespace scicalc
         public Form1()
         {
             InitializeComponent();
+            updateDisplay();
         }
 
         private void clearNumber()
@@ -40,6 +41,9 @@ namespace scicalc
                 number = "";
                 satir2 = "";
                 islemBitti = false;
+            }
+            if (satir2 == "0") {
+                satir2 = "";
             }
             number += c;
             satir2 += c;
@@ -98,7 +102,7 @@ namespace scicalc
 
         private void button_clearentry_Click(object sender, EventArgs e)
         {
-            satir2 = "";
+            satir2 = "0";
             updateDisplay();
         }
 
@@ -182,8 +186,11 @@ namespace scicalc
 
         private void button_dot_Click(object sender, EventArgs e)
         {
-            satir2 = satir2 + ",";
-            updateDisplay();
+            if (!satir2.Contains(","))
+            {
+                satir2 = satir2 + ",";
+                updateDisplay();
+            }
         }
 
         private void button_backspace_Click(object sender, EventArgs e)
@@ -198,7 +205,7 @@ namespace scicalc
             islem = '\0';
             clearNumber();
             satir1 = "";
-            satir2 = "";
+            satir2 = "0";
             updateDisplay();
         }
 
