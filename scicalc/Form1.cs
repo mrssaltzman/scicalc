@@ -16,85 +16,102 @@ namespace scicalc
             InitializeComponent();
         }
 
+        private String number = "";
+
+        private void clearNumber()
+        {
+            number = "";
+        }
+
+        private void updateNumber(String c)
+        {
+            number += c;
+            this.display.Text += c;
+        }
+
         private void button_1_Click(object sender, EventArgs e)
         {
-            this.display.Text += "1";
+            updateNumber("1");
         }
 
         private void button_2_Click(object sender, EventArgs e)
         {
-            this.display.Text += "2";
+            updateNumber("2");
         }
 
         private void button_3_Click(object sender, EventArgs e)
         {
-            this.display.Text += "3";
+            updateNumber("3");
         }
 
         private void button_4_Click(object sender, EventArgs e)
         {
-            this.display.Text += "4";
+            updateNumber("4");
         }
 
         private void button_5_Click(object sender, EventArgs e)
         {
-            this.display.Text += "5";
+            updateNumber("5");
         }
 
         private void button_6_Click(object sender, EventArgs e)
         {
-            this.display.Text += "6";
+            updateNumber("6");
         }
 
         private void button_7_Click(object sender, EventArgs e)
         {
-            this.display.Text += "7";
+            updateNumber("7");
         }
 
         private void button_8_Click(object sender, EventArgs e)
         {
-            this.display.Text += "8";
+            updateNumber("8");
         }
 
         private void button_9_Click(object sender, EventArgs e)
         {
-            this.display.Text += "9";
+            updateNumber("9");
         }
 
         private void button_0_Click(object sender, EventArgs e)
         {
-            this.display.Text += "0";
+            updateNumber("0");
         }
 
-        private void button_delete_Click(object sender, EventArgs e)
+        private void button_clearentry_Click(object sender, EventArgs e)
         {
             this.display.Text = "";
         }
 
         private void button_plus_Click(object sender, EventArgs e)
         {
-            ilkSayi = double.Parse(this.display.Text);
-            this.display.Text = "";
+            ilkSayi = double.Parse(number);
+            this.display.Text += " +\r\n";
+            clearNumber();
             islem = '+';
         }
 
         private void button_minus_Click(object sender, EventArgs e)
         {
-            ilkSayi = int.Parse(this.display.Text);
-            this.display.Text = "";
+            ilkSayi = double.Parse(number);
+            this.display.Text += " -\r\n";
+            clearNumber();
             islem = '-';
         }
         private void button_mult_Click(object sender, EventArgs e)
         {
-            ilkSayi = int.Parse(this.display.Text);
-            this.display.Text = "";
+            ilkSayi = double.Parse(number);
+            this.display.Text += " *\r\n";
+            clearNumber();
             islem = '*';
 
         }
         private void button_div_Click(object sender, EventArgs e)
         {
-            ilkSayi = int.Parse(this.display.Text);
-            this.display.Text = "";
+            ilkSayi = double.Parse(number);
+            this.display.Text += " /\r\n";
+            clearNumber();
             islem = '/';
         }
 
@@ -103,7 +120,7 @@ namespace scicalc
 
         private void button_equal_Click(object sender, EventArgs e)
         {
-            double ikinciSayi = double.Parse(this.display.Text);
+            double ikinciSayi = double.Parse(number);
             double sonuc = 0;
             if (islem == '+')
             {
@@ -114,15 +131,20 @@ namespace scicalc
                 sonuc = ilkSayi - ikinciSayi;
             }
             else if (islem == '*')
-	        {
-		       sonuc = ilkSayi * ikinciSayi;
-	        }
+            {
+                sonuc = ilkSayi * ikinciSayi;
+            }
             else if (islem == '/')
-	        {
+            {
                 sonuc = ilkSayi / ikinciSayi;
-	        }
+            }
+            else
+            {
+                sonuc = ikinciSayi;
+            }
              
             this.display.Text = sonuc.ToString();
+            number = sonuc.ToString();
         }
 
         private void button_negate_Click(object sender, EventArgs e)
@@ -135,7 +157,6 @@ namespace scicalc
         private void button_dot_Click(object sender, EventArgs e)
         {
             this.display.Text += ",";
-
         }
 
         private void button_backspace_Click(object sender, EventArgs e)
@@ -144,10 +165,14 @@ namespace scicalc
             this.display.Text = this.display.Text.Substring(0, length);
         }
 
-        
-        
+        private void button_clear_Click(object sender, EventArgs e)
+        {
+            ilkSayi = 0;
+            islem = '\0';
+            clearNumber();
+            this.display.Text = "";
+        }
 
-        
-        
+           
     }
 }

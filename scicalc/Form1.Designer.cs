@@ -45,9 +45,10 @@
             this.button_8 = new System.Windows.Forms.Button();
             this.button_plus = new System.Windows.Forms.Button();
             this.display = new System.Windows.Forms.TextBox();
-            this.button_delete = new System.Windows.Forms.Button();
+            this.button_clearentry = new System.Windows.Forms.Button();
             this.button_dot = new System.Windows.Forms.Button();
             this.button_backspace = new System.Windows.Forms.Button();
+            this.button_clear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_7
@@ -212,20 +213,22 @@
             // 
             // display
             // 
-            this.display.Location = new System.Drawing.Point(84, 84);
+            this.display.Location = new System.Drawing.Point(84, 46);
+            this.display.Multiline = true;
             this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(242, 20);
+            this.display.Size = new System.Drawing.Size(242, 48);
             this.display.TabIndex = 1;
+            this.display.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // button_delete
+            // button_clearentry
             // 
-            this.button_delete.Location = new System.Drawing.Point(208, 110);
-            this.button_delete.Name = "button_delete";
-            this.button_delete.Size = new System.Drawing.Size(56, 54);
-            this.button_delete.TabIndex = 0;
-            this.button_delete.Text = "C";
-            this.button_delete.UseVisualStyleBackColor = true;
-            this.button_delete.Click += new System.EventHandler(this.button_delete_Click);
+            this.button_clearentry.Location = new System.Drawing.Point(208, 110);
+            this.button_clearentry.Name = "button_clearentry";
+            this.button_clearentry.Size = new System.Drawing.Size(56, 54);
+            this.button_clearentry.TabIndex = 0;
+            this.button_clearentry.Text = "CE";
+            this.button_clearentry.UseVisualStyleBackColor = true;
+            this.button_clearentry.Click += new System.EventHandler(this.button_clearentry_Click);
             // 
             // button_dot
             // 
@@ -248,17 +251,28 @@
             this.button_backspace.UseVisualStyleBackColor = true;
             this.button_backspace.Click += new System.EventHandler(this.button_backspace_Click);
             // 
+            // button_clear
+            // 
+            this.button_clear.Location = new System.Drawing.Point(86, 115);
+            this.button_clear.Name = "button_clear";
+            this.button_clear.Size = new System.Drawing.Size(53, 48);
+            this.button_clear.TabIndex = 3;
+            this.button_clear.Text = "C";
+            this.button_clear.UseVisualStyleBackColor = true;
+            this.button_clear.Click += new System.EventHandler(this.button_clear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(504, 457);
+            this.ClientSize = new System.Drawing.Size(703, 501);
+            this.Controls.Add(this.button_clear);
             this.Controls.Add(this.button_backspace);
             this.Controls.Add(this.display);
             this.Controls.Add(this.button_8);
             this.Controls.Add(this.button_div);
             this.Controls.Add(this.button_dot);
-            this.Controls.Add(this.button_delete);
+            this.Controls.Add(this.button_clearentry);
             this.Controls.Add(this.button_negate);
             this.Controls.Add(this.button_0);
             this.Controls.Add(this.button_equal);
@@ -299,9 +313,10 @@
         private System.Windows.Forms.Button button_8;
         private System.Windows.Forms.Button button_plus;
         private System.Windows.Forms.TextBox display;
-        private System.Windows.Forms.Button button_delete;
+        private System.Windows.Forms.Button button_clearentry;
         private System.Windows.Forms.Button button_dot;
         private System.Windows.Forms.Button button_backspace;
+        private System.Windows.Forms.Button button_clear;
     }
 }
 
