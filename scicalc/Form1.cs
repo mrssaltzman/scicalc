@@ -11,12 +11,15 @@ namespace scicalc
 {
     public partial class Form1 : Form
     {
+        private String number = "";
+        private double ilkSayi;
+        private char islem;
+        private bool islemBitti = false;
+
         public Form1()
         {
             InitializeComponent();
         }
-
-        private String number = "";
 
         private void clearNumber()
         {
@@ -25,6 +28,12 @@ namespace scicalc
 
         private void updateNumber(String c)
         {
+            if (islemBitti)
+            {
+                number = "";
+                this.display.Text = "";
+                islemBitti = false;
+            }
             number += c;
             this.display.Text += c;
         }
@@ -115,9 +124,6 @@ namespace scicalc
             islem = '/';
         }
 
-        private double ilkSayi;
-        private char islem;
-
         private void button_equal_Click(object sender, EventArgs e)
         {
             double ikinciSayi = double.Parse(number);
@@ -145,6 +151,7 @@ namespace scicalc
              
             this.display.Text = sonuc.ToString();
             number = sonuc.ToString();
+            islemBitti = true;
         }
 
         private void button_negate_Click(object sender, EventArgs e)
