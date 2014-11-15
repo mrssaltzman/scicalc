@@ -18,7 +18,7 @@ namespace scicalc
         private String satir1 = "";
         private String satir2 = "0";
 
-        private void updateDisplay()
+        private void renderDisplay()
         {
             this.display.Text = satir1 + "\r\n" + satir2;
         }
@@ -26,7 +26,7 @@ namespace scicalc
         public Form1()
         {
             InitializeComponent();
-            updateDisplay();
+            renderDisplay();
         }
 
         private void clearNumber()
@@ -47,7 +47,7 @@ namespace scicalc
             }
             number += c;
             satir2 += c;
-            updateDisplay();
+            renderDisplay();
         }
 
         private void button_1_Click(object sender, EventArgs e)
@@ -103,7 +103,7 @@ namespace scicalc
         private void button_clearentry_Click(object sender, EventArgs e)
         {
             satir2 = "0";
-            updateDisplay();
+            renderDisplay();
         }
 
         private void button_plus_Click(object sender, EventArgs e)
@@ -113,7 +113,7 @@ namespace scicalc
             satir2 = "";
             clearNumber();
             islem = '+';
-            updateDisplay();
+            renderDisplay();
         }
 
         private void button_minus_Click(object sender, EventArgs e)
@@ -123,7 +123,7 @@ namespace scicalc
             satir2 = "";
             clearNumber();
             islem = '-';
-            updateDisplay();
+            renderDisplay();
         }
 
         private void button_mult_Click(object sender, EventArgs e)
@@ -133,7 +133,7 @@ namespace scicalc
             satir2 = "";
             clearNumber();
             islem = '*';
-            updateDisplay();
+            renderDisplay();
         }
 
         private void button_div_Click(object sender, EventArgs e)
@@ -143,7 +143,7 @@ namespace scicalc
             satir2 = "";
             clearNumber();
             islem = '/';
-            updateDisplay();
+            renderDisplay();
         }
 
         private void button_equal_Click(object sender, EventArgs e)
@@ -172,7 +172,7 @@ namespace scicalc
             }
             satir2 = sonuc.ToString();
             satir1 = "";
-            updateDisplay();
+            renderDisplay();
             number = sonuc.ToString();
             islemBitti = true;
         }
@@ -182,7 +182,7 @@ namespace scicalc
             double sayi = double.Parse(satir2);
             sayi = sayi * -1;
             satir2 = sayi.ToString();
-            updateDisplay();
+            renderDisplay();
         }
 
         private void button_dot_Click(object sender, EventArgs e)
@@ -190,7 +190,7 @@ namespace scicalc
             if (!satir2.Contains(","))
             {
                 satir2 = satir2 + ",";
-                updateDisplay();
+                renderDisplay();
             }
         }
 
@@ -205,7 +205,7 @@ namespace scicalc
             {
                 satir2 = "0";
             }
-            updateDisplay();
+            renderDisplay();
         }
 
         private void button_clear_Click(object sender, EventArgs e)
@@ -215,7 +215,7 @@ namespace scicalc
             clearNumber();
             satir1 = "";
             satir2 = "0";
-            updateDisplay();
+            renderDisplay();
         }
     }
 }
