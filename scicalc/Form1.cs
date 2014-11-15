@@ -18,9 +18,18 @@ namespace scicalc
         private String satir1 = "";
         private String satir2 = "0";
 
+        private Font satir1Font = new Font("Arial", 10);
+        private Font satir2Font = new Font("Arial", 16);
+
         private void renderDisplay()
         {
-            this.display.Text = satir1 + "\r\n" + satir2;
+            this.rdisplay.Text = "";
+            this.rdisplay.SelectionFont = satir1Font;
+            this.rdisplay.AppendText(satir1 + "\r\n");
+            this.rdisplay.SelectionFont = satir2Font;
+            this.rdisplay.AppendText(satir2);
+            this.rdisplay.SelectAll();
+            this.rdisplay.SelectionAlignment = HorizontalAlignment.Right;
         }
 
         public Form1()

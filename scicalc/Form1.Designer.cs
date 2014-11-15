@@ -44,11 +44,11 @@
             this.button_div = new System.Windows.Forms.Button();
             this.button_8 = new System.Windows.Forms.Button();
             this.button_plus = new System.Windows.Forms.Button();
-            this.display = new System.Windows.Forms.TextBox();
             this.button_clearentry = new System.Windows.Forms.Button();
             this.button_dot = new System.Windows.Forms.Button();
             this.button_backspace = new System.Windows.Forms.Button();
             this.button_clear = new System.Windows.Forms.Button();
+            this.rdisplay = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // button_7
@@ -211,15 +211,6 @@
             this.button_plus.UseVisualStyleBackColor = true;
             this.button_plus.Click += new System.EventHandler(this.button_plus_Click);
             // 
-            // display
-            // 
-            this.display.Location = new System.Drawing.Point(84, 46);
-            this.display.Multiline = true;
-            this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(242, 48);
-            this.display.TabIndex = 1;
-            this.display.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // button_clearentry
             // 
             this.button_clearentry.Location = new System.Drawing.Point(208, 110);
@@ -261,14 +252,23 @@
             this.button_clear.UseVisualStyleBackColor = true;
             this.button_clear.Click += new System.EventHandler(this.button_clear_Click);
             // 
+            // rdisplay
+            // 
+            this.rdisplay.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.rdisplay.Location = new System.Drawing.Point(86, 46);
+            this.rdisplay.Name = "rdisplay";
+            this.rdisplay.Size = new System.Drawing.Size(240, 56);
+            this.rdisplay.TabIndex = 4;
+            this.rdisplay.Text = "";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(703, 501);
+            this.Controls.Add(this.rdisplay);
             this.Controls.Add(this.button_clear);
             this.Controls.Add(this.button_backspace);
-            this.Controls.Add(this.display);
             this.Controls.Add(this.button_8);
             this.Controls.Add(this.button_div);
             this.Controls.Add(this.button_dot);
@@ -290,7 +290,6 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -312,11 +311,11 @@
         private System.Windows.Forms.Button button_div;
         private System.Windows.Forms.Button button_8;
         private System.Windows.Forms.Button button_plus;
-        private System.Windows.Forms.TextBox display;
         private System.Windows.Forms.Button button_clearentry;
         private System.Windows.Forms.Button button_dot;
         private System.Windows.Forms.Button button_backspace;
         private System.Windows.Forms.Button button_clear;
+        private System.Windows.Forms.RichTextBox rdisplay;
     }
 }
 
