@@ -56,6 +56,7 @@
             this.button_mr = new System.Windows.Forms.Button();
             this.button_mplus = new System.Windows.Forms.Button();
             this.button_mminus = new System.Windows.Forms.Button();
+            this.label_memory = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button_7
@@ -296,6 +297,7 @@
             this.button_mc.TabIndex = 7;
             this.button_mc.Text = "MC";
             this.button_mc.UseVisualStyleBackColor = true;
+            this.button_mc.Click += new System.EventHandler(this.button_mc_Click);
             // 
             // button_ms
             // 
@@ -325,6 +327,7 @@
             this.button_mplus.TabIndex = 7;
             this.button_mplus.Text = "M+";
             this.button_mplus.UseVisualStyleBackColor = true;
+            this.button_mplus.Click += new System.EventHandler(this.button_mplus_Click);
             // 
             // button_mminus
             // 
@@ -334,12 +337,24 @@
             this.button_mminus.TabIndex = 7;
             this.button_mminus.Text = "M-";
             this.button_mminus.UseVisualStyleBackColor = true;
+            this.button_mminus.Click += new System.EventHandler(this.button_mminus_Click);
+            // 
+            // label_memory
+            // 
+            this.label_memory.AutoSize = true;
+            this.label_memory.Location = new System.Drawing.Point(92, 79);
+            this.label_memory.Name = "label_memory";
+            this.label_memory.Size = new System.Drawing.Size(16, 13);
+            this.label_memory.TabIndex = 8;
+            this.label_memory.Text = "M";
+            this.label_memory.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(543, 482);
+            this.Controls.Add(this.label_memory);
             this.Controls.Add(this.button_mr);
             this.Controls.Add(this.button_mminus);
             this.Controls.Add(this.button_mplus);
@@ -371,6 +386,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -404,6 +420,7 @@
         private System.Windows.Forms.Button button_mr;
         private System.Windows.Forms.Button button_mplus;
         private System.Windows.Forms.Button button_mminus;
+        private System.Windows.Forms.Label label_memory;
     }
 }
 

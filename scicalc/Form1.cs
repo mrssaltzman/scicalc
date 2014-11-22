@@ -233,6 +233,7 @@ namespace scicalc
         private void button_ms_Click(object sender, EventArgs e)
         {
             memory = satir2;
+            label_memory.Visible = true;
         }
 
         private void button_mr_Click(object sender, EventArgs e)
@@ -241,8 +242,20 @@ namespace scicalc
             renderDisplay();
         }
 
-        
+        private void button_mc_Click(object sender, EventArgs e)
+        {
+            memory = "0";
+            label_memory.Visible = false;
+        }
 
-        
+        private void button_mplus_Click(object sender, EventArgs e)
+        {
+            memory = (double.Parse(memory) + double.Parse(satir2)).ToString();
+        }
+
+        private void button_mminus_Click(object sender, EventArgs e)
+        {
+            memory = (double.Parse(memory) - double.Parse(satir2)).ToString();
+        }
     }
 }
