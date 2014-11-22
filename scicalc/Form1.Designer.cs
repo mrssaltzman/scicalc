@@ -265,7 +265,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(703, 501);
+            this.ClientSize = new System.Drawing.Size(490, 456);
             this.Controls.Add(this.rdisplay);
             this.Controls.Add(this.button_clear);
             this.Controls.Add(this.button_backspace);

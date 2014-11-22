@@ -123,6 +123,7 @@ namespace scicalc
             clearNumber();
             islem = '+';
             renderDisplay();
+            
         }
 
         private void button_minus_Click(object sender, EventArgs e)
@@ -191,6 +192,7 @@ namespace scicalc
             double sayi = double.Parse(satir2);
             sayi = sayi * -1;
             satir2 = sayi.ToString();
+            number = sayi.ToString();
             renderDisplay();
         }
 
