@@ -14,6 +14,7 @@ namespace scicalc
         private String number = "";
         private double ilkSayi;
         private char islem;
+        private String memory;
         private bool islemBitti = false;
         private String satir1 = "";
         private String satir2 = "0";
@@ -236,8 +237,26 @@ namespace scicalc
             renderDisplay();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void button_resiproc_Click(object sender, EventArgs e)
         {
+            satir1 = "reciproc(" + number + ")";
+            satir2 = (1 / double.Parse(number)).ToString();
+            renderDisplay();
         }
+
+        private void button_ms_Click(object sender, EventArgs e)
+        {
+            memory = satir2;
+        }
+
+        private void button_mr_Click(object sender, EventArgs e)
+        {
+            satir2 = memory;
+            renderDisplay();
+        }
+
+        
+
+        
     }
 }
