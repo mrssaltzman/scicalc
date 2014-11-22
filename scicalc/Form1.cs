@@ -11,7 +11,7 @@ namespace scicalc
 {
     public partial class Form1 : Form
     {
-        private String number = "";
+        
         private double ilkSayi;
         private char islem;
         private String memory;
@@ -39,23 +39,16 @@ namespace scicalc
             renderDisplay();
         }
 
-        private void clearNumber()
-        {
-            number = "";
-        }
-
         private void updateNumber(String c)
         {
             if (islemBitti)
             {
-                number = "";
                 satir2 = "";
                 islemBitti = false;
             }
             if (satir2 == "0") {
                 satir2 = "";
             }
-            number += c;
             satir2 += c;
             renderDisplay();
         }
@@ -118,10 +111,9 @@ namespace scicalc
 
         private void button_plus_Click(object sender, EventArgs e)
         {
-            ilkSayi = double.Parse(number);
+            ilkSayi = double.Parse(satir2);
             satir1 = satir2 + " +";
             satir2 = "";
-            clearNumber();
             islem = '+';
             renderDisplay();
             
@@ -129,37 +121,34 @@ namespace scicalc
 
         private void button_minus_Click(object sender, EventArgs e)
         {
-            ilkSayi = double.Parse(number);
+            ilkSayi = double.Parse(satir2);
             satir1 = satir2 + " -";
             satir2 = "";
-            clearNumber();
             islem = '-';
             renderDisplay();
         }
 
         private void button_mult_Click(object sender, EventArgs e)
         {
-            ilkSayi = double.Parse(number);
+            ilkSayi = double.Parse(satir2);
             satir1 = satir2 + " *";
             satir2 = "";
-            clearNumber();
             islem = '*';
             renderDisplay();
         }
 
         private void button_div_Click(object sender, EventArgs e)
         {
-            ilkSayi = double.Parse(number);
+            ilkSayi = double.Parse(satir2);
             satir1 = satir2 + " /";
             satir2 = "";
-            clearNumber();
             islem = '/';
             renderDisplay();
         }
 
         private void button_equal_Click(object sender, EventArgs e)
         {
-            double ikinciSayi = double.Parse(number);
+            double ikinciSayi = double.Parse(satir2);
             double sonuc = 0;
             if (islem == '+')
             {
@@ -184,7 +173,6 @@ namespace scicalc
             satir2 = sonuc.ToString();
             satir1 = "";
             renderDisplay();
-            number = sonuc.ToString();
             islemBitti = true;
         }
 
@@ -193,7 +181,6 @@ namespace scicalc
             double sayi = double.Parse(satir2);
             sayi = sayi * -1;
             satir2 = sayi.ToString();
-            number = sayi.ToString();
             renderDisplay();
         }
 
@@ -224,7 +211,6 @@ namespace scicalc
         {
             ilkSayi = 0;
             islem = '\0';
-            clearNumber();
             satir1 = "";
             satir2 = "0";
             renderDisplay();
@@ -232,15 +218,15 @@ namespace scicalc
 
         private void button_sqrt_Click(object sender, EventArgs e)
         {
-            satir1 = "sqrt(" + number + ")";
-            satir2 = Math.Sqrt(double.Parse(number)).ToString();
+            satir1 = "sqrt(" + satir2 + ")";
+            satir2 = Math.Sqrt(double.Parse(satir2)).ToString();
             renderDisplay();
         }
 
         private void button_resiproc_Click(object sender, EventArgs e)
         {
-            satir1 = "reciproc(" + number + ")";
-            satir2 = (1 / double.Parse(number)).ToString();
+            satir1 = "reciproc(" + satir2 + ")";
+            satir2 = (1 / double.Parse(satir2)).ToString();
             renderDisplay();
         }
 
