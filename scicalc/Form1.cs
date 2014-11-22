@@ -228,5 +228,16 @@ namespace scicalc
             satir2 = "0";
             renderDisplay();
         }
+
+        private void button_sqrt_Click(object sender, EventArgs e)
+        {
+            satir1 = "sqrt(" + number + ")";
+            satir2 = Math.Sqrt(double.Parse(number)).ToString();
+            renderDisplay();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

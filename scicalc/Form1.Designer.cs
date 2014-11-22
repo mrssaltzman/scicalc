@@ -49,6 +49,7 @@
             this.button_backspace = new System.Windows.Forms.Button();
             this.button_clear = new System.Windows.Forms.Button();
             this.rdisplay = new System.Windows.Forms.RichTextBox();
+            this.button_sqrt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_7
@@ -261,11 +262,22 @@
             this.rdisplay.TabIndex = 4;
             this.rdisplay.Text = "";
             // 
+            // button_sqrt
+            // 
+            this.button_sqrt.Location = new System.Drawing.Point(332, 113);
+            this.button_sqrt.Name = "button_sqrt";
+            this.button_sqrt.Size = new System.Drawing.Size(59, 48);
+            this.button_sqrt.TabIndex = 5;
+            this.button_sqrt.Text = "\u221A";
+            this.button_sqrt.UseVisualStyleBackColor = true;
+            this.button_sqrt.Click += new System.EventHandler(this.button_sqrt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 456);
+            this.Controls.Add(this.button_sqrt);
             this.Controls.Add(this.rdisplay);
             this.Controls.Add(this.button_clear);
             this.Controls.Add(this.button_backspace);
@@ -289,6 +301,7 @@
             this.Controls.Add(this.button_7);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
@@ -316,6 +329,7 @@
         private System.Windows.Forms.Button button_backspace;
         private System.Windows.Forms.Button button_clear;
         private System.Windows.Forms.RichTextBox rdisplay;
+        private System.Windows.Forms.Button button_sqrt;
     }
 }
 
