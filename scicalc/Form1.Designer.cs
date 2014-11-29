@@ -58,6 +58,7 @@
             this.button_mminus = new System.Windows.Forms.Button();
             this.label_memory = new System.Windows.Forms.Label();
             this.button_sqr = new System.Windows.Forms.Button();
+            this.button1_cube = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_7
@@ -360,11 +361,22 @@
             this.button_sqr.UseVisualStyleBackColor = true;
             this.button_sqr.Click += new System.EventHandler(this.button_sqr_Click);
             // 
+            // button1_cube
+            // 
+            this.button1_cube.Location = new System.Drawing.Point(337, 187);
+            this.button1_cube.Name = "button1_cube";
+            this.button1_cube.Size = new System.Drawing.Size(50, 44);
+            this.button1_cube.TabIndex = 10;
+            this.button1_cube.Text = "x3";
+            this.button1_cube.UseVisualStyleBackColor = true;
+            this.button1_cube.Click += new System.EventHandler(this.button1_cube_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 482);
+            this.Controls.Add(this.button1_cube);
             this.Controls.Add(this.button_sqr);
             this.Controls.Add(this.label_memory);
             this.Controls.Add(this.button_mr);
@@ -434,6 +446,7 @@
         private System.Windows.Forms.Button button_mminus;
         private System.Windows.Forms.Label label_memory;
         private System.Windows.Forms.Button button_sqr;
+        private System.Windows.Forms.Button button1_cube;
     }
 }
 

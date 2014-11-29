@@ -265,5 +265,13 @@ namespace scicalc
             satir2 = (ikinciSayi*ikinciSayi).ToString();
             renderDisplay();
         }
+
+        private void button1_cube_Click(object sender, EventArgs e)
+        {
+            double ikinciSayi = double.Parse(satir2);
+            satir1 = "cube(" + satir2 + ")";
+            satir2 = (ikinciSayi * ikinciSayi * ikinciSayi).ToString();
+            renderDisplay();
+        }
     }
 }
