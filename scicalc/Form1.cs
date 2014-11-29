@@ -257,5 +257,13 @@ namespace scicalc
         {
             memory = (double.Parse(memory) - double.Parse(satir2)).ToString();
         }
+
+        private void button_sqr_Click(object sender, EventArgs e)
+        {
+            double ikinciSayi = double.Parse(satir2);
+            satir1 = "sqr(" + satir2 +")";
+            satir2 = (ikinciSayi*ikinciSayi).ToString();
+            renderDisplay();
+        }
     }
 }
