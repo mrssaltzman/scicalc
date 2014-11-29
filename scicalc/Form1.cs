@@ -273,5 +273,33 @@ namespace scicalc
             satir2 = (ikinciSayi * ikinciSayi * ikinciSayi).ToString();
             renderDisplay();
         }
+
+        private void button_sin_Click(object sender, EventArgs e)
+        {
+            satir1 = "sin(" + satir2 + ")";
+            double sonuc = Math.Sin(Math.PI * double.Parse(satir2) / 180);
+            sonuc = Math.Round(sonuc, 10);
+            satir2 = sonuc.ToString(); 
+            renderDisplay();
+        }
+
+        private void button_cos_Click(object sender, EventArgs e)
+        {
+            satir1 = "cos(" + satir2 + ")";
+            double sonuc = Math.Cos(Math.PI * double.Parse(satir2) / 180);
+            sonuc = Math.Round(sonuc, 10);
+            satir2 = sonuc.ToString();
+            renderDisplay();
+        }
+
+        private void button_tan_Click(object sender, EventArgs e)
+        {
+            satir1 = "tan(" + satir2 + ")";
+            double sonuc = Math.Tan(Math.PI * double.Parse(satir2) / 180);
+            sonuc = Math.Round(sonuc, 10);
+            satir2 = sonuc.ToString();
+            renderDisplay();
+
+        }
     }
 }

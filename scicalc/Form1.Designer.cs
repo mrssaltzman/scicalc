@@ -59,6 +59,9 @@
             this.label_memory = new System.Windows.Forms.Label();
             this.button_sqr = new System.Windows.Forms.Button();
             this.button1_cube = new System.Windows.Forms.Button();
+            this.button_sin = new System.Windows.Forms.Button();
+            this.button_cos = new System.Windows.Forms.Button();
+            this.button_tan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_7
@@ -371,11 +374,44 @@
             this.button1_cube.UseVisualStyleBackColor = true;
             this.button1_cube.Click += new System.EventHandler(this.button1_cube_Click);
             // 
+            // button_sin
+            // 
+            this.button_sin.Location = new System.Drawing.Point(337, 237);
+            this.button_sin.Name = "button_sin";
+            this.button_sin.Size = new System.Drawing.Size(46, 46);
+            this.button_sin.TabIndex = 11;
+            this.button_sin.Text = "sin";
+            this.button_sin.UseVisualStyleBackColor = true;
+            this.button_sin.Click += new System.EventHandler(this.button_sin_Click);
+            // 
+            // button_cos
+            // 
+            this.button_cos.Location = new System.Drawing.Point(341, 289);
+            this.button_cos.Name = "button_cos";
+            this.button_cos.Size = new System.Drawing.Size(42, 41);
+            this.button_cos.TabIndex = 12;
+            this.button_cos.Text = "cos";
+            this.button_cos.UseVisualStyleBackColor = true;
+            this.button_cos.Click += new System.EventHandler(this.button_cos_Click);
+            // 
+            // button_tan
+            // 
+            this.button_tan.Location = new System.Drawing.Point(346, 344);
+            this.button_tan.Name = "button_tan";
+            this.button_tan.Size = new System.Drawing.Size(40, 44);
+            this.button_tan.TabIndex = 13;
+            this.button_tan.Text = "tan";
+            this.button_tan.UseVisualStyleBackColor = true;
+            this.button_tan.Click += new System.EventHandler(this.button_tan_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 482);
+            this.Controls.Add(this.button_tan);
+            this.Controls.Add(this.button_cos);
+            this.Controls.Add(this.button_sin);
             this.Controls.Add(this.button1_cube);
             this.Controls.Add(this.button_sqr);
             this.Controls.Add(this.label_memory);
@@ -447,6 +483,9 @@
         private System.Windows.Forms.Label label_memory;
         private System.Windows.Forms.Button button_sqr;
         private System.Windows.Forms.Button button1_cube;
+        private System.Windows.Forms.Button button_sin;
+        private System.Windows.Forms.Button button_cos;
+        private System.Windows.Forms.Button button_tan;
     }
 }
 
