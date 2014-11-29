@@ -299,7 +299,13 @@ namespace scicalc
             sonuc = Math.Round(sonuc, 10);
             satir2 = sonuc.ToString();
             renderDisplay();
+        }
 
+        private void button_powten_Click(object sender, EventArgs e)
+        {
+            satir1 = "powten(" + satir2 + ")";
+            satir2 = Math.Pow(10, double.Parse(satir2)).ToString();
+            renderDisplay();
         }
     }
 }

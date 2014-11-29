@@ -62,6 +62,7 @@
             this.button_sin = new System.Windows.Forms.Button();
             this.button_cos = new System.Windows.Forms.Button();
             this.button_tan = new System.Windows.Forms.Button();
+            this.button_powten = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_7
@@ -396,7 +397,7 @@
             // 
             // button_tan
             // 
-            this.button_tan.Location = new System.Drawing.Point(346, 344);
+            this.button_tan.Location = new System.Drawing.Point(341, 336);
             this.button_tan.Name = "button_tan";
             this.button_tan.Size = new System.Drawing.Size(40, 44);
             this.button_tan.TabIndex = 13;
@@ -404,11 +405,22 @@
             this.button_tan.UseVisualStyleBackColor = true;
             this.button_tan.Click += new System.EventHandler(this.button_tan_Click);
             // 
+            // button_powten
+            // 
+            this.button_powten.Location = new System.Drawing.Point(272, 140);
+            this.button_powten.Name = "button_powten";
+            this.button_powten.Size = new System.Drawing.Size(42, 35);
+            this.button_powten.TabIndex = 14;
+            this.button_powten.Text = "10x";
+            this.button_powten.UseVisualStyleBackColor = true;
+            this.button_powten.Click += new System.EventHandler(this.button_powten_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 482);
+            this.Controls.Add(this.button_powten);
             this.Controls.Add(this.button_tan);
             this.Controls.Add(this.button_cos);
             this.Controls.Add(this.button_sin);
@@ -486,6 +498,7 @@
         private System.Windows.Forms.Button button_sin;
         private System.Windows.Forms.Button button_cos;
         private System.Windows.Forms.Button button_tan;
+        private System.Windows.Forms.Button button_powten;
     }
 }
 
