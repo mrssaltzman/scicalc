@@ -307,5 +307,32 @@ namespace scicalc
             satir2 = Math.Pow(10, double.Parse(satir2)).ToString();
             renderDisplay();
         }
+
+        private void button_sinh_Click(object sender, EventArgs e)
+        {
+            satir1 = "sinh(" + satir2 + ")";
+            double sonuc = Math.Sinh(Math.PI * double.Parse(satir2) / 180);
+            sonuc = Math.Round(sonuc, 10);
+            satir2 = sonuc.ToString();
+            renderDisplay();
+        }
+
+        private void button_cosh_Click(object sender, EventArgs e)
+        {
+            satir1 = "cosh(" + satir2 + ")";
+            double sonuc = Math.Cosh(Math.PI * double.Parse(satir2) / 180);
+            sonuc = Math.Round(sonuc, 10);
+            satir2 = sonuc.ToString();
+            renderDisplay();
+        }
+
+        private void button_tanh_Click(object sender, EventArgs e)
+        {
+            satir1 = "tanh(" + satir2 + ")";
+            double sonuc = Math.Tanh(Math.PI * double.Parse(satir2) / 180);
+            sonuc = Math.Round(sonuc, 10);
+            satir2 = sonuc.ToString();
+            renderDisplay();
+        }
     }
 }
