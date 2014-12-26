@@ -75,14 +75,14 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.button_pi = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button_cosh = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
+            this.button_exp = new System.Windows.Forms.Button();
             this.button_log = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -547,14 +547,15 @@
             this.button12.TabIndex = 16;
             this.button12.UseVisualStyleBackColor = true;
             // 
-            // button14
+            // button_pi
             // 
-            this.button14.Location = new System.Drawing.Point(77, 363);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(56, 54);
-            this.button14.TabIndex = 16;
-            this.button14.Text = "Pİ";
-            this.button14.UseVisualStyleBackColor = true;
+            this.button_pi.Location = new System.Drawing.Point(77, 363);
+            this.button_pi.Name = "button_pi";
+            this.button_pi.Size = new System.Drawing.Size(56, 54);
+            this.button_pi.TabIndex = 16;
+            this.button_pi.Text = "Pİ";
+            this.button_pi.UseVisualStyleBackColor = true;
+            this.button_pi.Click += new System.EventHandler(this.button_pi_Click);
             // 
             // button15
             // 
@@ -564,6 +565,7 @@
             this.button15.TabIndex = 16;
             this.button15.Text = "Int";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button16
             // 
@@ -611,14 +613,14 @@
             this.button21.Text = "button2";
             this.button21.UseVisualStyleBackColor = true;
             // 
-            // button22
+            // button_exp
             // 
-            this.button22.Location = new System.Drawing.Point(139, 422);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(56, 54);
-            this.button22.TabIndex = 16;
-            this.button22.Text = "Exp";
-            this.button22.UseVisualStyleBackColor = true;
+            this.button_exp.Location = new System.Drawing.Point(139, 422);
+            this.button_exp.Name = "button_exp";
+            this.button_exp.Size = new System.Drawing.Size(56, 54);
+            this.button_exp.TabIndex = 16;
+            this.button_exp.Text = "Exp";
+            this.button_exp.UseVisualStyleBackColor = true;
             // 
             // button_log
             // 
@@ -639,13 +641,13 @@
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button16);
-            this.Controls.Add(this.button22);
+            this.Controls.Add(this.button_exp);
             this.Controls.Add(this.button_log);
             this.Controls.Add(this.button21);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button_cosh);
             this.Controls.Add(this.button17);
-            this.Controls.Add(this.button14);
+            this.Controls.Add(this.button_pi);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button_ln);
@@ -747,14 +749,14 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button_pi;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button_cosh;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button_exp;
         private System.Windows.Forms.Button button_log;
     }
 }
