@@ -378,6 +378,13 @@ namespace scicalc
             renderDisplay();
         }
 
+        private void button_cuberoot_Click(object sender, EventArgs e)
+        {
+            satir1 = "cuberoot(" + satir2 + ")";
+            satir2 = Math.Pow(double.Parse(satir2), 1.0 / 3).ToString();
+            renderDisplay();
+        }
+
 
     }
 }

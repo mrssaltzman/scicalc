@@ -72,7 +72,7 @@
             this.button_sinh = new System.Windows.Forms.Button();
             this.button_ln = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.button_cuberoot = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button_pi = new System.Windows.Forms.Button();
@@ -521,14 +521,15 @@
             this.button9.Text = "(";
             this.button9.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // button_cuberoot
             // 
-            this.button10.Location = new System.Drawing.Point(325, 363);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(56, 54);
-            this.button10.TabIndex = 16;
-            this.button10.Text = "button2";
-            this.button10.UseVisualStyleBackColor = true;
+            this.button_cuberoot.Location = new System.Drawing.Point(325, 363);
+            this.button_cuberoot.Name = "button_cuberoot";
+            this.button_cuberoot.Size = new System.Drawing.Size(56, 54);
+            this.button_cuberoot.TabIndex = 16;
+            this.button_cuberoot.Text = "küp kök ";
+            this.button_cuberoot.UseVisualStyleBackColor = true;
+            this.button_cuberoot.Click += new System.EventHandler(this.button_cuberoot_Click);
             // 
             // button11
             // 
@@ -639,7 +640,7 @@
             this.ClientSize = new System.Drawing.Size(797, 482);
             this.Controls.Add(this.button_int);
             this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button_cuberoot);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button_exp);
             this.Controls.Add(this.button_log);
@@ -746,7 +747,7 @@
         private System.Windows.Forms.Button button_sinh;
         private System.Windows.Forms.Button button_ln;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button_cuberoot;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button_pi;
