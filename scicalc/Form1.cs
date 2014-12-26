@@ -166,6 +166,14 @@ namespace scicalc
             {
                 sonuc = ilkSayi / ikinciSayi;
             }
+            else if (islem == 'y')
+            {
+                sonuc = Math.Pow(ilkSayi, 1/ikinciSayi);
+            }
+            else if (islem == '%')
+            {
+                sonuc = ilkSayi % ikinciSayi;
+            }
             else
             {
                 sonuc = ikinciSayi;
@@ -385,6 +393,24 @@ namespace scicalc
             renderDisplay();
         }
 
+        private void button_yroot_Click(object sender, EventArgs e)
+        {
+            ilkSayi = double.Parse(satir2);
+            satir1 = satir2 + " yroot";
+            satir2 = "";
+            islem = 'y';
+            renderDisplay();
+        }
+
+        private void button_mod_Click(object sender, EventArgs e)
+        {
+            ilkSayi = double.Parse(satir2);
+            satir1 = satir2 + " Mod";
+            satir2 = "";
+            islem = '%';
+            renderDisplay();
+        }
+   
 
     }
 }
