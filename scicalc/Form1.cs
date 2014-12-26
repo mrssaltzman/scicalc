@@ -334,5 +334,14 @@ namespace scicalc
             satir2 = sonuc.ToString();
             renderDisplay();
         }
+
+        private void button_ln_Click(object sender, EventArgs e)
+        {
+            satir1 = "ln(" + satir2 + ")";
+            double sonuc = Math.Log(double.Parse(satir2), Math.E);
+            satir2 = sonuc.ToString();
+            renderDisplay();
+        }
+
     }
 }

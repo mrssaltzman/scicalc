@@ -70,7 +70,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button_sinh = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.button_ln = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -501,14 +501,15 @@
             this.button_sinh.UseVisualStyleBackColor = true;
             this.button_sinh.Click += new System.EventHandler(this.button_sinh_Click);
             // 
-            // button8
+            // button_ln
             // 
-            this.button8.Location = new System.Drawing.Point(201, 183);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(56, 54);
-            this.button8.TabIndex = 16;
-            this.button8.Text = "ln";
-            this.button8.UseVisualStyleBackColor = true;
+            this.button_ln.Location = new System.Drawing.Point(201, 183);
+            this.button_ln.Name = "button_ln";
+            this.button_ln.Size = new System.Drawing.Size(56, 54);
+            this.button_ln.TabIndex = 16;
+            this.button_ln.Text = "ln";
+            this.button_ln.UseVisualStyleBackColor = true;
+            this.button_ln.Click += new System.EventHandler(this.button_ln_Click);
             // 
             // button9
             // 
@@ -645,7 +646,7 @@
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button_ln);
             this.Controls.Add(this.button_sinh);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -739,7 +740,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button_sinh;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button_ln;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
