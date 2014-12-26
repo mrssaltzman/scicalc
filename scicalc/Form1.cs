@@ -338,10 +338,19 @@ namespace scicalc
         private void button_ln_Click(object sender, EventArgs e)
         {
             satir1 = "ln(" + satir2 + ")";
-            double sonuc = Math.Log(double.Parse(satir2), Math.E);
+            double sonuc = Math.Log(double.Parse(satir2));
             satir2 = sonuc.ToString();
             renderDisplay();
         }
+
+        private void button_log_Click(object sender, EventArgs e)
+        {
+            satir1 = "log(" + satir2 + ")";
+            double sonuc = Math.Log10(double.Parse(satir2));
+            satir2 = sonuc.ToString();
+            renderDisplay();
+        }
+
 
     }
 }

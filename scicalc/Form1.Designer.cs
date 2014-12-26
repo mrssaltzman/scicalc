@@ -83,7 +83,7 @@
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
+            this.button_log = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_7
@@ -619,14 +619,15 @@
             this.button22.Text = "Exp";
             this.button22.UseVisualStyleBackColor = true;
             // 
-            // button23
+            // button_log
             // 
-            this.button23.Location = new System.Drawing.Point(263, 422);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(56, 54);
-            this.button23.TabIndex = 16;
-            this.button23.Text = "log";
-            this.button23.UseVisualStyleBackColor = true;
+            this.button_log.Location = new System.Drawing.Point(263, 422);
+            this.button_log.Name = "button_log";
+            this.button_log.Size = new System.Drawing.Size(56, 54);
+            this.button_log.TabIndex = 16;
+            this.button_log.Text = "log";
+            this.button_log.UseVisualStyleBackColor = true;
+            this.button_log.Click += new System.EventHandler(this.button_log_Click);
             // 
             // Form1
             // 
@@ -638,7 +639,7 @@
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button22);
-            this.Controls.Add(this.button23);
+            this.Controls.Add(this.button_log);
             this.Controls.Add(this.button21);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button_cosh);
@@ -753,7 +754,7 @@
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button_log;
     }
 }
 
