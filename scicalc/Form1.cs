@@ -351,6 +351,21 @@ namespace scicalc
             renderDisplay();
         }
 
+        private void button_fact_Click(object sender, EventArgs e)
+        {
+            satir1 = "fact(" + satir2 + ")";
+            int sonuc=1;
+            for (int i = 1; i <=int.Parse(satir2); i++)
+            {
+                sonuc = i * sonuc;    
+            } 
+            satir2 = sonuc.ToString();
+            renderDisplay();
+            
+        }
+
+
+
 
     }
 }
