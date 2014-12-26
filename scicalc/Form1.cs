@@ -364,7 +364,19 @@ namespace scicalc
             
         }
 
+        private void button_pi_Click(object sender, EventArgs e)
+        {
+            satir2 = Math.PI.ToString();
+            renderDisplay();
+        }
 
+        private void button_int_Click(object sender, EventArgs e)
+        {
+            satir1 = "Int(" + satir2 + ")";
+            int sonuc = (int)double.Parse(satir2);
+            satir2 = sonuc.ToString();
+            renderDisplay();
+        }
 
 
     }

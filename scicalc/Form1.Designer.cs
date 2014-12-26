@@ -76,7 +76,7 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button_pi = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.button_int = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button_cosh = new System.Windows.Forms.Button();
@@ -557,15 +557,15 @@
             this.button_pi.UseVisualStyleBackColor = true;
             this.button_pi.Click += new System.EventHandler(this.button_pi_Click);
             // 
-            // button15
+            // button_int
             // 
-            this.button15.Location = new System.Drawing.Point(77, 243);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(56, 54);
-            this.button15.TabIndex = 16;
-            this.button15.Text = "Int";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.button_int.Location = new System.Drawing.Point(77, 243);
+            this.button_int.Name = "button_int";
+            this.button_int.Size = new System.Drawing.Size(56, 54);
+            this.button_int.TabIndex = 16;
+            this.button_int.Text = "Int";
+            this.button_int.UseVisualStyleBackColor = true;
+            this.button_int.Click += new System.EventHandler(this.button_int_Click);
             // 
             // button16
             // 
@@ -637,7 +637,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 482);
-            this.Controls.Add(this.button15);
+            this.Controls.Add(this.button_int);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button16);
@@ -750,7 +750,7 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button_pi;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button_int;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button_cosh;
